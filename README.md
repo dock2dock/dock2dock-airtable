@@ -17,9 +17,9 @@ Note: Please read the [documentation](https://docs.dock2dock.io/api/v1/create-sa
 
 ## 3. Key Points:
 
-- Replace `<x-api-key>` with your actual API key
+- Replace `<x-api-key>` with your [actual API key](./SalesOrderService.ts)
 - Replace `record.getCellValue("XX")` with your correct airtable field.
-- You may have to copy the `Dock2DockSalesOrder` and `CreateCrossdockSalesOrder` file content into `Airtable.ts` if Airtable doesn't allow imports.
+- You may have to merge `Dock2dockSalesOrder.ts`, `Dock2dockApiError.ts` and `SalesOrderService.ts` files content if Airtable doesn't allow imports.
  
 ## 4. Testing:
 

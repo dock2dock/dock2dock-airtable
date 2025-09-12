@@ -1,5 +1,5 @@
 import { CreateCrossdockSalesOrder } from "./SalesOrderService";
-import { Dock2dockSalesOrder } from "./Dock2DockSalesOrder";
+import { Dock2dockSalesOrder } from "./Dock2dockSalesOrder";
 
 const salesOrder = new Dock2dockSalesOrder(
     null, 

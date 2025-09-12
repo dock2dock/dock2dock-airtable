@@ -1,13 +1,9 @@
-import { Dock2dockSalesOrder } from "./Dock2DockSalesOrder";
-import { CreateCrossdockSalesOrder } from "./SalesOrderService";
+import { Dock2dockSalesOrder } from "./Dock2dockSalesOrder";
+import { CreateSalesOrder } from "./SalesOrderService";
 
 // Get the table
 let table = base.getTable("YourTableName");
 
-// Load records from a specific view
-let query = await table.selectRecordsAsync({
-    fields: ["SomeField"], // only pull what you need
-});
 let view = table.getView("YourViewName");
 let result = await view.selectRecordsAsync();
 
@@ -25,5 +21,5 @@ for (let record of result.records) {
         true, //isCrossdock
         record.getCellValue("requestedDeliveryDate") || null); // '2025-09-14'
 
-    await CreateCrossdockSalesOrder(salesOrder);
+    await CreateSalesOrder(salesOrder);
 }
